@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="copy-cat.css" />
+    <title>Saved for Later</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://www.ucook.co.za/logos/large.svg"
+            alt="Ucook Logo"
+            height="30"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">MEAL KITS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FROZEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WINE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MARKET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WEEKEND BOXES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT UCOOK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PARTNER WITH US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GIFT CARDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-light mr-2" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-orange" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Saved Images</h1>
+    <div id="savedImageContainer"></div>
+
+    <script>
+      window.onload = function () {
+        const savedImageContainer = document.getElementById(
+          "savedImageContainer"
+        );
+        const savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+
+        if (savedItems.length > 0) {
+          savedItems.forEach((imageUrl) => {
+            const imageElement = document.createElement("img");
+            imageElement.src = imageUrl;
+            imageElement.alt = "Saved Image";
+            imageElement.style.width = "200px";
+            imageElement.style.height = "auto";
+            imageElement.style.margin = "5px";
+            savedImageContainer.appendChild(imageElement);
+          });
+        } else {
+          savedImageContainer.textContent = "No images saved for later.";
+        }
+      };
+    </script>
+  </body>
+</html>
