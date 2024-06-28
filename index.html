@@ -1,565 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UCOOK</title>
-    <link rel="stylesheet" href="copy-cat.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-  </head>
 
-  <body>
-    <!--dropdown  -->
-    <div class="dropdown">
-      <h2>Clickable Dropdown</h2>
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="savedforlater.html">Saved For Later</a>
-        <a href="#contact">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UCOOK</title>
+  <link rel="stylesheet" href="copy-cat.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <!--dropdown  -->
+  <div class="dropdown">
+    <h2>Clickable Dropdown</h2>
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="savedforlater.html">Saved For Later</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.ucook.co.za/logos/large.svg" alt="Ucook Logo" height="30" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">MEAL KITS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FROZEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WINE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MARKET</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WEEKEND BOXES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT UCOOK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PARTNER WITH US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GIFT CARDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light mr-2" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-orange" href="#">Sign Up</a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://www.ucook.co.za/logos/large.svg"
-            alt="Ucook Logo"
-            height="30"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">MEAL KITS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FROZEN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WINE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">MARKET</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">WEEKEND BOXES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT UCOOK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PARTNER WITH US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">GIFT CARDS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-outline-light mr-2" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-outline-orange" href="#">Sign Up</a>
-            </li>
-          </ul>
+  </nav>
+  <!--  hero main section-->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="mb-4">Dinner, made easy</h1>
+          <h3 class="mb-4">Fresh ingredients from the farm</h3>
+          <p>
+            We deliver easy to follow and delicious recipes, and perfectly
+            pre-portioned fresh ingredients to your door every week.
+          </p>
+          <a href="#" class="btn btn-primary">SELECT MEALS</a>
         </div>
-      </div>
-    </nav>
-    <!--  hero section-->
-    <section class="hero">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1 class="mb-4">Dinner, made easy</h1>
-            <h3 class="mb-4">Fresh ingredients from the farm</h3>
-            <p>
-              We deliver easy to follow and delicious recipes, and perfectly
-              pre-portioned fresh ingredients to your door every week.
-            </p>
-            <a href="#" class="btn btn-primary">SELECT MEALS</a>
-          </div>
-          <div class="col-md-6">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="d-block w-100"
-                    src="https://images.ucook.co.za/images/width=1000%7Cencoding=jpeg/c82cdc3c/c82cdc3c-cc37-4c0c-b4ca-8b97e8d7beeb.jpeg"
-                    alt="First slide"
-                  />
-                </div>
+        <div class="col-md-6">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100"
+                  src="https://images.ucook.co.za/images/width=1000%7Cencoding=jpeg/c82cdc3c/c82cdc3c-cc37-4c0c-b4ca-8b97e8d7beeb.jpeg"
+                  alt="First slide" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--how it works  -->
-    <section class="how-it-works">
-      <div class="container">
-        <h2 class="text-center mb-4">How does it work?</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/c7a62d3a/c7a62d3a-129b-4d9d-a3c6-70a3e3caab38.svg"
-                  alt="ucook pic1"
-                />
-                <h5 class="card-title">1. You choose</h5>
-                <p class="card-text">
-                  Sign up, pick from 24 new recipes every week with orders
-                  closing at 9am on Wednesday, and pause your account at any
-                  time.
-                </p>
-                <button
-                  class="btn btn-outline-primary btn-save-for-later"
-                  onclick="saveForLater(this)"
-                >
-                  Save for Later
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/4537368d/4537368d-7089-406f-b28f-5746af2f7e9d.svg"
-                  alt="ucook pic2"
-                />
-                <h5 class="card-title">2. We deliver</h5>
-                <p class="card-text">
-                  Get a weekly delivery of perfectly portioned fresh produce,
-                  shipped in an insulated cold box.
-                </p>
-                <button
-                  class="btn btn-outline-primary btn-save-for-later"
-                  onclick="saveForLater(this)"
-                >
-                  Save for Later
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/352325a7/352325a7-e47c-4cd9-bc6a-7d24777db685.svg"
-                  alt="ucook pic3"
-                />
-                <h5 class="card-title">3. You cook</h5>
-                <p class="card-text">
-                  Get simple-to-follow recipes and create restaurant-quality
-                  dishes in your own home with no more meal planning or food
-                  waste.
-                </p>
-                <button
-                  class="btn btn-outline-primary btn-save-for-later"
-                  onclick="saveForLater(this)"
-                >
-                  Save for Later
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- faq -->
-    <section class="faq">
-      <h2 class="text-center mb-4">
-        Got more Questions? - check out our FAQ's
-      </h2>
-      <div class="accordion" id="faqAccordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Question 1?
-              </button>
-            </h5>
-          </div>
-
-          <div
-            id="collapseOne"
-            class="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#faqAccordion"
-          >
-            <div class="card-body">Answer 1.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- carousel -->
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/a64ee0f7/a64ee0f7-ecc4-4698-a50a-745214aa97f6.webp"
-                alt="Image 1"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/1845b948/1845b948-1b58-4f6c-8736-5e1f4364a41d.webp"
-                alt="Image 2"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/6edd2374/6edd2374-dae0-4fda-94c7-5416477b905a.webp"
-                alt="Image 3"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/5e483228/5e483228-f488-49d0-82c5-c7152ab6e82a.webp"
-                alt="Image 4"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/b2926787/b2926787-43ec-46da-95cf-b1455cbef47f.webp"
-                alt="Image 5"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/120ed323/120ed323-dc34-4d1a-bca4-213aef25e0c5.webp"
-                alt="Image 6"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/b3f60139/b3f60139-52e0-4fb1-8cae-b268af123dc9.webp"
-                alt="Image 7"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/1a47ee1c/1a47ee1c-d3eb-495c-a4cc-3bb5be406001.webp"
-                alt="Image 8"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/1ca638ac/1ca638ac-8fb1-47b0-9a36-96ba72a01e9e.webp"
-                alt="Image 9"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/500cdd22/500cdd22-4216-4a58-83ae-fefe930ac5ae.webp"
-                alt="Image 10"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/44cb5f63/44cb5f63-8768-4967-8e6c-f9a93e142a01.webp"
-                alt="Image 11"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-            <div class="col-md-3">
-              <img
-                class="d-block w-100"
-                src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/000845d9/000845d9-45a1-4e4b-9707-d571affb6efb.webp"
-                alt="Image 12"
-              />
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-    <!--  add content-->
-    <div class="container mt-5">
+  </section>
+  <!--how it works section -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="text-center mb-4">How does it work?</h2>
       <div class="row">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4">
           <div class="card">
             <div class="card-body">
               <img
-                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/89efd2ac/89efd2ac-6b67-4f71-b80a-3fc31d90ec90.svg"
-                alt="ucook pic1"
-              />
-              <h5 class="card-title">Cook like a chef</h5>
+                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/c7a62d3a/c7a62d3a-129b-4d9d-a3c6-70a3e3caab38.svg"
+                alt="ucook pic1" />
+              <h5 class="card-title">1. You choose</h5>
               <p class="card-text">
-                Whip up restaurant-quality meals at home using fresh ingredients
-                and simple-to-follow recipes. With 24 new dishes every week,
-                you'll hone your kitchen skills and build your culinary
-                repertoire.
+                Sign up, pick from 24 new recipes every week with orders
+                closing at 9am on Wednesday, and pause your account at any
+                time.
               </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
+              <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
                 Save for Later
               </button>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4">
           <div class="card">
             <div class="card-body">
               <img
-                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/374d59a8/374d59a8-fe65-4a40-ba0e-17915d22a352.svg"
-                alt="ucook pic2"
-              />
-              <h5 class="card-title">Saves you money</h5>
+                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/4537368d/4537368d-7089-406f-b28f-5746af2f7e9d.svg"
+                alt="ucook pic2" />
+              <h5 class="card-title">2. We deliver</h5>
               <p class="card-text">
-                With tasty meals from as low as R60 per person, we take care of
-                all the portioning and measuring so you only get exactly what
-                you need. No wastage, no queueing, and delivery straight to your
-                door!
+                Get a weekly delivery of perfectly portioned fresh produce,
+                shipped in an insulated cold box.
               </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
+              <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
                 Save for Later
               </button>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4">
           <div class="card">
             <div class="card-body">
               <img
-                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/d6f4c32d/d6f4c32d-9147-4947-a2b7-3d05ba1cd82e.svg"
-                alt="ucook pic3"
-              />
-              <h5 class="card-title">Fresh produce</h5>
+                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/352325a7/352325a7-e47c-4cd9-bc6a-7d24777db685.svg"
+                alt="ucook pic3" />
+              <h5 class="card-title">3. You cook</h5>
               <p class="card-text">
-                We source only the best and freshest ingredients that we can
-                find from local farms and businesses. We choose reliable
-                suppliers and aim for organic and free range wherever it's
-                possible.
+                Get simple-to-follow recipes and create restaurant-quality
+                dishes in your own home with no more meal planning or food
+                waste.
               </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <img
-                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/b979ff02/b979ff02-b252-4056-a1fc-2bfa51798c64.svg"
-                alt="ucook pic4"
-              />
-              <h5 class="card-title">Conscious decisions</h5>
-              <p class="card-text">
-                We're all about making better eating choices, supporting local
-                businesses, and reducing our carbon footprint. We consider what
-                we do and the impact that our choices will have on the planet.
-              </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <img
-                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/e60c3dad/e60c3dad-1331-4fb7-904d-e8281ff3e0ed.svg"
-                alt="ucook pic5"
-              />
-              <h5 class="card-title">No commitment</h5>
-              <p class="card-text">
-                You can pause at any time for flexibility that meets your needs.
-                When you go away or have events planned for your evenings, you
-                can pause without penalty or even change your delivery address.
-              </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <img
-                src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/00490b8d/00490b8d-2433-4257-8551-89ce4af9be5d.svg"
-                alt="ucook pic6"
-              />
-              <h5 class="card-title">Convenience</h5>
-              <p class="card-text">
-                Wave goodbye to meal-planning panic because we've taken the
-                hassle out of deciding what's for dinner. From Meal Kits to
-                Market, our wide range of options ensures every meal is
-                deliciously simple.
-              </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
+              <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
                 Save for Later
               </button>
             </div>
@@ -567,152 +155,412 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- faq section -->
+  <section class="faq">
+    <h2 class="text-center mb-4">
+      Got more Questions? - check out our FAQ's
+    </h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Question 1?
+            </button>
+          </h5>
+        </div>
 
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+          <div class="card-body">Answer 1.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- carousel section -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/a64ee0f7/a64ee0f7-ecc4-4698-a50a-745214aa97f6.webp"
+              alt="Image 1" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/1845b948/1845b948-1b58-4f6c-8736-5e1f4364a41d.webp"
+              alt="Image 2" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/6edd2374/6edd2374-dae0-4fda-94c7-5416477b905a.webp"
+              alt="Image 3" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/5e483228/5e483228-f488-49d0-82c5-c7152ab6e82a.webp"
+              alt="Image 4" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/b2926787/b2926787-43ec-46da-95cf-b1455cbef47f.webp"
+              alt="Image 5" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/120ed323/120ed323-dc34-4d1a-bca4-213aef25e0c5.webp"
+              alt="Image 6" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/b3f60139/b3f60139-52e0-4fb1-8cae-b268af123dc9.webp"
+              alt="Image 7" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/1a47ee1c/1a47ee1c-d3eb-495c-a4cc-3bb5be406001.webp"
+              alt="Image 8" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/1ca638ac/1ca638ac-8fb1-47b0-9a36-96ba72a01e9e.webp"
+              alt="Image 9" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/500cdd22/500cdd22-4216-4a58-83ae-fefe930ac5ae.webp"
+              alt="Image 10" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/44cb5f63/44cb5f63-8768-4967-8e6c-f9a93e142a01.webp"
+              alt="Image 11" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+          <div class="col-md-3">
+            <img class="d-block w-100"
+              src="https://images.ucook.co.za/images/width=1152%7Cheight=1152%7Cencoding=webp/000845d9/000845d9-45a1-4e4b-9707-d571affb6efb.webp"
+              alt="Image 12" />
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--  add content section -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/89efd2ac/89efd2ac-6b67-4f71-b80a-3fc31d90ec90.svg"
+              alt="ucook pic1" />
+            <h5 class="card-title">Cook like a chef</h5>
+            <p class="card-text">
+              Whip up restaurant-quality meals at home using fresh ingredients
+              and simple-to-follow recipes. With 24 new dishes every week,
+              you'll hone your kitchen skills and build your culinary
+              repertoire.
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/374d59a8/374d59a8-fe65-4a40-ba0e-17915d22a352.svg"
+              alt="ucook pic2" />
+            <h5 class="card-title">Saves you money</h5>
+            <p class="card-text">
+              With tasty meals from as low as R60 per person, we take care of
+              all the portioning and measuring so you only get exactly what
+              you need. No wastage, no queueing, and delivery straight to your
+              door!
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/d6f4c32d/d6f4c32d-9147-4947-a2b7-3d05ba1cd82e.svg"
+              alt="ucook pic3" />
+            <h5 class="card-title">Fresh produce</h5>
+            <p class="card-text">
+              We source only the best and freshest ingredients that we can
+              find from local farms and businesses. We choose reliable
+              suppliers and aim for organic and free range wherever it's
+              possible.
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/b979ff02/b979ff02-b252-4056-a1fc-2bfa51798c64.svg"
+              alt="ucook pic4" />
+            <h5 class="card-title">Conscious decisions</h5>
+            <p class="card-text">
+              We're all about making better eating choices, supporting local
+              businesses, and reducing our carbon footprint. We consider what
+              we do and the impact that our choices will have on the planet.
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/e60c3dad/e60c3dad-1331-4fb7-904d-e8281ff3e0ed.svg"
+              alt="ucook pic5" />
+            <h5 class="card-title">No commitment</h5>
+            <p class="card-text">
+              You can pause at any time for flexibility that meets your needs.
+              When you go away or have events planned for your evenings, you
+              can pause without penalty or even change your delivery address.
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="https://images.ucook.co.za/images/width=128%7Cencoding=svg/00490b8d/00490b8d-2433-4257-8551-89ce4af9be5d.svg"
+              alt="ucook pic6" />
+            <h5 class="card-title">Convenience</h5>
+            <p class="card-text">
+              Wave goodbye to meal-planning panic because we've taken the
+              hassle out of deciding what's for dinner. From Meal Kits to
+              Market, our wide range of options ensures every meal is
+              deliciously simple.
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Amanda R</h5>
+            <p class="card-text">
+              “We just love UCOOK, even my teens have started saying UCOOK is
+              the bomb!”
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Angelique N</h5>
+            <p class="card-text">
+              “Keep doing what you do! The food is delicious and easy to cook.
+              I honestly cannot brag about it enough. Every meal has so much
+              flavour and tastes amazing!”
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mignon K</h5>
+            <p class="card-text">
+              “Loving that I don't have to plan, buy and prepare a weeks
+              meals. There is 0 food wastage. Thank you for helping us with
+              super easy and delicious dinners!”
+            </p>
+            <button class="btn btn-outline-primary btn-save-for-later" onclick="saveForLater(this)">
+              Save for Later
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--comment form section -->
+  <form id="commentForm">
+    <input type="text" id="commentInput" placeholder="Enter your comment" />
+    <button type="submit">Submit</button>
+  </form>
+  <div id="commentSection"></div>
+
+  <!--hide show section  -->
+
+  <div class="hidenshow">
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+  </div>
+  <!-- chained effect section -->
+  <div class="centered-content">
+    <p id="p1">jQuery is fun!!</p>
+
+    <button id="chainedeffect">Click me</button>
+  </div>
+  <!--  footer section -->
+  <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Amanda R</h5>
-              <p class="card-text">
-                “We just love UCOOK, even my teens have started saying UCOOK is
-                the bomb!”
-              </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
+          <h5>Follow Us</h5>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
         </div>
-
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Angelique N</h5>
-              <p class="card-text">
-                “Keep doing what you do! The food is delicious and easy to cook.
-                I honestly cannot brag about it enough. Every meal has so much
-                flavour and tastes amazing!”
-              </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
+          <h5>Legal</h5>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
         </div>
-
         <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mignon K</h5>
-              <p class="card-text">
-                “Loving that I don't have to plan, buy and prepare a weeks
-                meals. There is 0 food wastage. Thank you for helping us with
-                super easy and delicious dinners!”
-              </p>
-              <button
-                class="btn btn-outline-primary btn-save-for-later"
-                onclick="saveForLater(this)"
-              >
-                Save for Later
-              </button>
-            </div>
-          </div>
+          <h5>Contact</h5>
+          <ul>
+            <li>Email: support@ucook.co.za</li>
+            <li>Phone: 021 447 4424</li>
+          </ul>
         </div>
       </div>
     </div>
+  </footer>
+  <!--js libraries section -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!--comment form  -->
-    <form id="commentForm">
-      <input type="text" id="commentInput" placeholder="Enter your comment" />
-      <button type="submit">Submit</button>
-    </form>
-    <div id="commentSection"></div>
+  <script src="script.js"></script>
+  <script>
+    function saveImage(imageUrl) {
+      let savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
+      savedItems.push(imageUrl);
+      localStorage.setItem("savedItems", JSON.stringify(savedItems));
+      alert(`Image saved for later.`);
+    }
 
-    <!--hide show   -->
+    const imageContainer = document.getElementById("imageContainer");
+    const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
 
-    <div class="hidenshow">
-      <p>If you click on the "Hide" button, I will disappear.</p>
-      <button id="hide">Hide</button>
-      <button id="show">Show</button>
-    </div>
-    <!-- chained effect -->
-    <div class="centered-content">
-      <p id="p1">jQuery is fun!!</p>
+    images.forEach((imageUrl) => {
+      const imageElement = document.createElement("img");
+      imageElement.src = imageUrl;
+      imageElement.alt = "Image";
 
-      <button id="chainedeffect">Click me</button>
-    </div>
-    <!--  footer-->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Follow Us</h5>
-            <ul>
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Legal</h5>
-            <ul>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Contact</h5>
-            <ul>
-              <li>Email: support@ucook.co.za</li>
-              <li>Phone: 021 447 4424</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--js libraries  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script src="script.js"></script>
-    <script>
-      function saveImage(imageUrl) {
-        let savedItems = JSON.parse(localStorage.getItem("savedItems")) || [];
-        savedItems.push(imageUrl);
-        localStorage.setItem("savedItems", JSON.stringify(savedItems));
-        alert(`Image saved for later.`);
-      }
-
-      const imageContainer = document.getElementById("imageContainer");
-      const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
-
-      images.forEach((imageUrl) => {
-        const imageElement = document.createElement("img");
-        imageElement.src = imageUrl;
-        imageElement.alt = "Image";
-
-        const saveLink = document.createElement("a");
-        saveLink.href = "#";
-        saveLink.textContent = "Save for Later";
-        saveLink.addEventListener("click", function () {
-          saveImage(imageUrl);
-        });
-
-        imageContainer.appendChild(imageElement);
-        imageContainer.appendChild(saveLink);
-        imageContainer.appendChild(document.createElement("br"));
+      const saveLink = document.createElement("a");
+      saveLink.href = "#";
+      saveLink.textContent = "Save for Later";
+      saveLink.addEventListener("click", function () {
+        saveImage(imageUrl);
       });
-    </script>
-  </body>
+
+      imageContainer.appendChild(imageElement);
+      imageContainer.appendChild(saveLink);
+      imageContainer.appendChild(document.createElement("br"));
+    });
+  </script>
+</body>
+
 </html>
